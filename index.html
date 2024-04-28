@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Michael Tegeder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            padding-top: 5.08%;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: lightgray;
+        }
+        .tab {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            color: gray;
+            transition: all 0.411940s;
+        }
+        .tab:hover {
+            border-bottom: 2px solid lightblue;
+            color: lightblue;
+        }
+        .tab.active {
+            border-bottom: 2px solid mediumblue;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border-top: 1px solid gray;
+            text-align: left;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+    <h1>Michael Tegeder</h1>
+    <div style="text-align: center;">
+        <span class="tab active" onclick="openTab(event, 'about')">About</span>
+        <span class="tab" onclick="openTab(event, 'experience')">Experience</span>
+        <span class="tab" onclick="openTab(event, 'skills')">Skills</span>
+        <span class="tab" onclick="openTab(event, 'projects')">Projects</span>
+        <span class="tab" onclick="openTab(event, 'contact')">Contact</span>
+    </div>
+
+    <div id="about" class="tab-content active">
+        <h2>About Me</h2>
+        <p>Healthcare Finance professional that is multi-faceted, efficient & reliable professional with 16+ 
+years of experience in process improvement,  customer  service,  finance,  training,  refunds,  and 
+ collections.  Innovative  and  collaborative  problem  solver  that strives to exemplify the 
+mission, vision, and values of the partnering organization. Strong strategic business acumen with 
+extensive knowledge of hospital revenue cycle operations including but not limited to hospital 
+operations, billing & collections, patient access, information technology, strategic planning, and 
+employee engagement. An independent consultant that offers a varied skill set covering 
+administrative support, client relations, human resources, and account and project management.  I 
+provide excellent interpersonal, phone and digital communication skills as well as staff 
+management. An experienced project manager that possesses the technical skills that assist in 
+identifying and solving problems, improving the workflow process by performing gap analysis and 
+reviewing metrics.
+</p>
+    </div>
+
+    <div id="experience" class="tab-content">
+        <h2>Professional Experience</h2>
+        <h3>Independent Consultant/Contractor (7/23 to Present)</h3>
+        <ul>
+            <li>Created a Call Center Gap analysis report by combining reports from Epic and Cisco CUIC to identify gaps in staff performance.</li>
+            <li>Developed a Call Center Agent Call report to show agent inbound/outbound calls versus goals, with KPIs for call duration, time between calls, and agent availability.</li>
+            <li>Created a Claims Denial dashboard to determine the top 10 classifications for denial, including Payor, Physician, Department, Denial Reason, and root causes of denials.</li>
+        </ul>
+        <h3>Finance Revenue Analyst at ALKU (6/22 to 6/23)</h3>
+        <ul>
+            <li>Assisted in automating the Annual GME process, reducing time from two weeks to one day by reformatting New Innovations reports used for GME reconciliation.</li>
+            <li>Collaborated with the Accounting and IT departments to automate repetitive tasks, reducing manual data entry and error rates.</li>
+            <li>Trained accounting staff on financial reporting tools in Excel and Power Query, improving operational efficiency.</li>
+            <li>Created Excel dashboards for GL and Bad Debt day-to-day comparisons using data from Crowe, Workday, and Epic G/L.</li>
+        </ul>
+        <h3>Single Billing Office Specialist at Wolcott, Wood & Taylor (5/19 to 1/21)</h3>
+        <ul>
+            <li>Investigated and resolved patient billing issues and concerns, preventing escalations and improving customer satisfaction.</li>
+            <li>Developed KPI dashboards and other software-based tools for monitoring call metrics, reducing call abandonment rates.</li>
+            <li>Created Cisco Finesse reporting to monitor phone metrics like call abandonment rates, call wait times, volume, and RONA.</li>
+            <li>Created or improved Excel-based tools for team use, such as discount calculators, call logs, and SBO contact sheets for improved after-call tasks.</li>
+        </ul>
+        <h3>Revenue Cycle Optimization Independent Consultant (1/17 to 1/19)</h3>
+        <ul>
+            <li>Trended revenue cycle metrics, including self-pay accounts receivables (AR) days, aged AR, patient cash collections, call abandonment rates, and staff productivity.</li>
+            <li>Assisted in reducing the Blue Cross and Managed Care Aged A/R (91+) by 10% over six months by providing additional information needed to adjudicate claims.</li>
+            <li>Conducted extensive analysis of rejected claims, identifying authorization/certifications not attached to the claims and medical records requests not being fulfilled.</li>
+            <li>Designed workflows and processes for collections, refunds, and underpayment teams.</li>
+        </ul>
+        <h3>Process Improvement and Documentation Consultant/Manager at UF Health (1/17 to 12/18)</h3>
+        <ul>
+            <li>Managed up to 15 staff on an interim basis for A/R Collections and Customer Service.</li>
+            <li>Condensed a 42-page training document into 7 pages for Third Party Charge Audits, reducing turnaround times from 14+ days to same day for outpatients and 48 hours for inpatients.</li>
+            <li>Redesigned the CDM Maintenance process to capture changes throughout the year, allowing for timely system updates.</li>
+        </ul>
+    </div>
+
+    <div id="skills" class="tab-content">
+        <h2>Skills & Certifications</h2>
+        <ul>
+            <li>Advanced knowledge of Excel, including Power Query and Power Pivot.</li>
+            <li>Proficiency with Epic EMR and Cisco CUIC for call center analytics.</li>
+            <li>Experience with financial analysis, revenue cycle optimization, and data management.</li>
+            <li>Strong strategic business acumen and project management skills.</li>
+        </ul>
+    </div>
+
+    <div id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <p>Michelle, ignore that this is blank for now.</p>
+    </div>
+
+    <div id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <p>Email: <a href="mailto:mtegeder312@gmail.com">mtegeder312@gmail.com</a></p>
+        <p>Cell Phone: 312-339-2062</p>
+        <p>Home Office: 773-942-6367</p>
+        <p>Download my resume: <a href="https://github.com/mtegeder312/blob/main/Tegeder%20CV.pdf" target="_blank">here</a></p>
+    </div>
+</body>
+</html>
